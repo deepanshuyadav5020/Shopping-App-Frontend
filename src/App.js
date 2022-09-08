@@ -5,19 +5,21 @@ import {Goals} from '../src/shared/widgets/goals_section'
 import { Products } from './modules/Products/Products';
 import {ActionAreaCard} from '../src/shared/widgets/Card'
 import { Footer } from './shared/widgets/footer';
+import SignIn from './pages/Login';
+import { SignUp } from './pages/Register';
 function App() {
   return (
     <>
-    <Header/>
+    {/* <Header/>
     <Banner/>
     <Goals/>
-    {/* <ActionAreaCard/> */}
     <Products title = "Trending Now"/>
     <Products title = "Just Launched"/>
     <Products title = "Best Sellers"/>
     <Products title = "Whey Protein"/>
-    <Footer/>
-    
+    <Footer/> */}
+    {/* <SignIn/> */}
+      <SignUp/>
     </>
   );
 }
