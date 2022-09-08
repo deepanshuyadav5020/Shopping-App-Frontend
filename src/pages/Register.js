@@ -35,7 +35,7 @@ export  function SignUp(){
           };
 
         const handleSignUp=()=>{
-          axios.post("http://localhost:5000/api/user/register", {
+          axios.post("http://54.68.113.86:5000/api/user/register", {
             name: firstname+lastname,
             email: user,
             password: password,
