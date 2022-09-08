@@ -27,6 +27,9 @@ export  function Header() {
 
           <Button color="inherit">My Cart</Button>
           <Button color="inherit">Login</Button>
+          <Typography>/</Typography>
+          <Button color="inherit">Register</Button>
+
         </Toolbar>
       </AppBar>
     </Box>
