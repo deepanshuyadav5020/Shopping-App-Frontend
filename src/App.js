@@ -7,19 +7,28 @@ import {ActionAreaCard} from '../src/shared/widgets/Card'
 import { Footer } from './shared/widgets/footer';
 import SignIn from './pages/Login';
 import { SignUp } from './pages/Register';
+import { BrowserRouter, Routes, Route} from "react-router-dom";
 function App() {
   return (
     <>
-    <Header/>
-    <Banner/>
-    <Goals/>
-    <Products title = "Trending Now"/>
-    <Products title = "Just Launched"/>
-    <Products title = "Best Sellers"/>
-    <Products title = "Whey Protein"/>
-    <Footer/>
-    {/* <SignIn/> */}
-      {/* <SignUp/> */}
+    <BrowserRouter>
+    <Routes>
+      <Route path='/' element = {<div>
+        <Header/>
+       <Banner/> 
+       <Goals/>
+       <Products title = "In Demand Products"/>
+       <Products title = "In Demand Products"/>
+       <Products title = "In Demand Products"/>
+       <Products title = "In Demand Products"/>
+       <Footer/>
+      </div>} />
+      <Route path='/login' element = {<SignIn/>} />
+      <Route path='/register' element = {<SignUp/>} />
+
+    </Routes>
+    </BrowserRouter>
+    
     </>
   );
 }

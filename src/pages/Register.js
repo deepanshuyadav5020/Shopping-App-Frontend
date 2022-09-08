@@ -14,6 +14,7 @@ import Container from '@mui/material/Container';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import { useState } from 'react';
 import { axios } from 'axios';
+import { NavLink} from 'react-router-dom';
 
 
 
@@ -111,7 +112,7 @@ export  function SignUp() {
               </Grid>
               
             </Grid>
-            <Button
+            <NavLink style={{ textDecoration: "none"}} to="/"><Button
              onClick={() =>{
                 axios.post("http://localhost:5000/api/user/register",{name: firstname+lastname,email : user , password : password}).then(
               res => {
@@ -125,7 +126,7 @@ export  function SignUp() {
               sx={{ mt: 3, mb: 2 }}
             >
               Sign Up
-            </Button>
+            </Button></NavLink>
             
           </Box>
         </Box>

@@ -14,6 +14,7 @@ import Container from '@mui/material/Container';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import { useState } from 'react';
 import {axios} from 'axios';
+import { NavLink} from 'react-router-dom';
 
 
 const theme = createTheme();
@@ -78,7 +79,7 @@ export default function SignIn() {
               autoComplete="current-password"
             />
             
-            <Button
+            <NavLink style={{ textDecoration: "none"}} to="/"><Button
             onClick={() =>{
               axios.post("http://localhost:5000/api/user/login",{email : user , password : password}).then(
             res => {
@@ -92,7 +93,7 @@ export default function SignIn() {
               sx={{ mt: 3, mb: 2 }}
             >
               Sign In
-            </Button>
+            </Button></NavLink>
             
           </Box>
         </Box>

@@ -6,30 +6,22 @@ import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import IconButton from '@mui/material/IconButton';
 import MenuIcon from '@mui/icons-material/Menu';
+import { NavLink} from 'react-router-dom';
 
 export  function Header() {
   return (
     <Box sx={{ flexGrow: 1 }}>
       <AppBar position="static">
         <Toolbar>
-          {/* <IconButton
-            size="large"
-            edge="start"
-            color="inherit"
-            aria-label="menu"
-            sx={{ mr: 2 }}
-          >
-            <MenuIcon />
-          </IconButton> */}
-          <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-            C H E A T K A R T
+        <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
+          C H E A T K A R T &nbsp;
+          <NavLink style={{ textDecoration: "none"}} to="/"> Home</NavLink>
           </Typography>
 
           <Button color="inherit">My Cart</Button>
-          <Button color="inherit">Login</Button>
+          <Button ><NavLink style={{ textDecoration: "none"}}to="/login">Login</NavLink> </Button>
           <Typography>/</Typography>
-          <Button color="inherit">Register</Button>
-
+          <NavLink style={{ textDecoration: "none"}}to="/register"><Button color="inherit">Register</Button></NavLink>
         </Toolbar>
       </AppBar>
     </Box>
