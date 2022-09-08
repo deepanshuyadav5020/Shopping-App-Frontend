@@ -1,6 +1,6 @@
 import React from 'react'
 import'../styles/goals_section.css'
-import { Goalitem } from './Goalitem'
+// import { Goalitem } from './Goalitem'
 
 export function Goals() {
   return (
