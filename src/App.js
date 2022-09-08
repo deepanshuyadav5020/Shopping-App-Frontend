@@ -10,16 +10,16 @@ import { SignUp } from './pages/Register';
 function App() {
   return (
     <>
-    {/* <Header/>
+    <Header/>
     <Banner/>
     <Goals/>
     <Products title = "Trending Now"/>
     <Products title = "Just Launched"/>
     <Products title = "Best Sellers"/>
     <Products title = "Whey Protein"/>
-    <Footer/> */}
+    <Footer/>
     {/* <SignIn/> */}
-      <SignUp/>
+      {/* <SignUp/> */}
     </>
   );
 }
