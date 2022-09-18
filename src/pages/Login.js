@@ -20,7 +20,7 @@ export default function SignIn() {
   const navigate = useNavigate();
   const handleLogin = () => {
     axios
-      .post("http://54.68.113.86:5000/api/user/login", {
+      .post("http://localhost:5000/api/user/login", {
         email: user,
         password: password,
       })

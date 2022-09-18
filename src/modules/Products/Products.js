@@ -14,7 +14,7 @@ export function Products(props) {
     //     // setProducts(result.data)
     // }).catch(err=> console.log(err))
     axios
-      .get("http://54.68.113.86:5000/api/product/")
+      .get("http://localhost:5000/api/product/")
       .then((res) => {
         // console.log(res.data);
         setTrending(res.data);
